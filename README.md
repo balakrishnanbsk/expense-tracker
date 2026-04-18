@@ -2,6 +2,10 @@
 
 A full-stack expense tracker built with Flask & PostgreSQL — manage expenses, income, investments, budgets, and shared circles.
 
+## Live Demo
+
+🌐 [expense-tracker-uvel.onrender.com](https://expense-tracker-uvel.onrender.com)
+
 ## Features
 
 - 📊 **Dashboard** — Overview with spending insights, charts, and budget alerts
