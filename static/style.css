@@ -128,7 +128,6 @@ body {
 }
 .profile-dropdown-name { font-weight: 600; font-size: .9rem; }
 .profile-dropdown-user { font-size: .75rem; color: var(--text-muted); }
-.profile-dropdown-divider { height: 1px; background: var(--border); margin: .2rem 0; }
 .profile-dropdown-item {
   display: flex; align-items: center; gap: .6rem;
   padding: .6rem 1rem; font-size: .85rem; color: var(--text);
