@@ -134,7 +134,7 @@ body {
   border: none; background: none; width: 100%; text-align: left;
   font-family: inherit;
 }
-.profile-dropdown-item:hover { background: var(--primary-light); }
+.profile-dropdown-item:hover { background: var(--primary-light) !important; }
 .profile-dropdown-danger { color: var(--danger); }
 .profile-dropdown-danger:hover { background: rgba(239,68,68,.08); }
 .theme-switch-item { position: relative; }
@@ -618,4 +618,8 @@ body {
   .navbar, .filter-bar, .form-card, .theme-toggle, .hamburger, .profile-dropdown { display: none !important; }
   body { background: #fff; color: #000; }
   .card { box-shadow: none; border: 1px solid #ddd; }
+}
+span.theme-icon-dark,span.theme-icon-light {
+    display: inline-flex;
+    align-items: center;
 }
