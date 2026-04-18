@@ -95,10 +95,6 @@ body {
   transition: all var(--transition); flex-shrink: 0;
 }
 .theme-toggle:hover { border-color: var(--primary); color: var(--primary); }
-[data-theme="light"] .theme-icon-dark { display: none; }
-[data-theme="dark"] .theme-icon-light { display: none; }
-[data-theme="light"] .theme-label-dark { display: none; }
-[data-theme="dark"] .theme-label-light { display: none; }
 
 /* ─── Profile Dropdown ───────────────────────────────── */
 .profile-menu-wrap { position: relative; }
@@ -135,12 +131,17 @@ body {
   display: flex; align-items: center; gap: .6rem;
   padding: .6rem 1rem; font-size: .85rem; color: var(--text);
   text-decoration: none; cursor: pointer; transition: background var(--transition);
-  border: none; background: none; width: 100%;
+  border: none; background: none; width: 100%; text-align: left;
+  font-family: inherit;
 }
 .profile-dropdown-item:hover { background: var(--primary-light); }
 .profile-dropdown-danger { color: var(--danger); }
 .profile-dropdown-danger:hover { background: rgba(239,68,68,.08); }
 .theme-switch-item { position: relative; }
+[data-theme="light"] .theme-icon-dark,
+[data-theme="dark"] .theme-icon-light,
+[data-theme="light"] .theme-label-dark,
+[data-theme="dark"] .theme-label-light { display: none; }
 
 /* ─── Container & Page ────────────────────────────────── */
 .container { max-width: 1200px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
