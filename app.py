@@ -331,6 +331,11 @@ def login_required(f):
         if "user_id" not in session:
             flash("Please sign in first.", "warning")
             return redirect(url_for("signin"))
+        user = current_user()
+        if not user:
+            session.clear()
+            flash("Session expired. Please sign in again.", "warning")
+            return redirect(url_for("signin"))
         return f(*a, **kw)
     return wrapper
 
