@@ -22,6 +22,7 @@
   --transition: .2s ease;
   --nav-bg: #ffffff;
   --nav-shadow: 0 1px 3px rgba(0,0,0,.08);
+  --card-bg: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -39,6 +40,7 @@
   --shadow-md: 0 4px 6px rgba(0,0,0,.3);
   --nav-bg: #1e293b;
   --nav-shadow: 0 1px 3px rgba(0,0,0,.4);
+  --card-bg: #1e293b;
 }
 
 /* ─── Reset & Base ────────────────────────────────────── */
